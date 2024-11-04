@@ -13,5 +13,19 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.hide-scrollbar::-webkit-scrollbar': {
+          display: 'none', // For Chrome, Safari, and Opera
+        },
+        '.hide-scrollbar': {
+          '-ms-overflow-style': 'none',  // For Internet Explorer and Edge
+          'scrollbar-width': 'none',      // For Firefox
+        },
+      }
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 };
