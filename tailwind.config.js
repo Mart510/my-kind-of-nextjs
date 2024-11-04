@@ -11,17 +11,22 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-    },
-  },
+      fontFamily: {
+        outfit: ['Outfit', 'sans-serif'],
+        geist: ['var(--font-geist-sans)', 'sans-serif'],
+        geistMono: ['var(--font-geist-mono)', 'monospace'],
+      }, 
+    }, 
+  }, 
   plugins: [
     function({ addUtilities }) {
       const newUtilities = {
         '.hide-scrollbar::-webkit-scrollbar': {
-          display: 'none', // For Chrome, Safari, and Opera
+          display: 'none',
         },
         '.hide-scrollbar': {
-          '-ms-overflow-style': 'none',  // For Internet Explorer and Edge
-          'scrollbar-width': 'none',      // For Firefox
+          '-ms-overflow-style': 'none',  
+          'scrollbar-width': 'none',     
         },
       }
 

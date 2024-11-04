@@ -1,8 +1,8 @@
-import Image from "next/image";
-import MyAdventures from "./_components/adventureCards";
-import PopularCruises from "./_components/Cruisescards";
+import { Outfit } from 'next/font/google'
 
 // component imports
+import PopularCruises from "./_components/Cruisescards";
+import MyAdventures from "./_components/adventureCards";
 
 
 export default function Home() {
@@ -12,8 +12,6 @@ export default function Home() {
         <MyAdventures/>
         <PopularCruises/>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-      </footer>
     </div>
   );
 }
