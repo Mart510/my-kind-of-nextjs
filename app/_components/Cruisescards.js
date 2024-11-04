@@ -93,7 +93,7 @@ const CruiseCardsContainer = () => {
     }
 
     return (
-            <div className="flex flex-row overflow-x-scroll max-w-full p-4 hide-scrollbar"> 
+            <div className="flex flex-row overflow-x-scroll max-w-full p-4 "> 
                 {error && <div className="text-red-500">{error}</div>}
                 {cruises.map((cruise) => (
                     <CruiseCard 

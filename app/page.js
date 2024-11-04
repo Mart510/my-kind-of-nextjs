@@ -8,7 +8,7 @@ import PopularCruises from "./_components/Cruisescards";
 export default function Home() {
   return (
     <div className="max-w-full">
-      <main className="items-center w-full px-24 pt-24">
+      <main className="items-center w-full px-24 pt-12">
         <MyAdventures/>
         <PopularCruises/>
       </main>

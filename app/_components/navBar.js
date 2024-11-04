@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Navbar = () => {
     return (
         <nav className="bg-blue-700">
-            <div className="ml-20 w-24 h-12 relative">
+            <div className="ml-20 my-0 w-40 h-16 relative">
                 <Link href="/">
                 <Image 
                     src={`/mykindofcruiselogo.png`} 
